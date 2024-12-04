@@ -23,7 +23,7 @@ public class Category {
 	@NotBlank
 	private String genre;
 	
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "genre", cascade = CascadeType.REMOVE )
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "category", cascade = CascadeType.REMOVE )
 	private List<Product> product;
 
 	public Long getId() {
